@@ -1,0 +1,83 @@
+/* Estilos para la barra de navegación */
+#navbar {
+    background-color: #333; /* Color de fondo de la barra de navegación */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centra el contenido horizontalmente */
+    position: fixed; /* Fija la barra en la parte superior */
+    top: 0; /* Ubica la barra en la parte superior de la ventana */
+    left: 0; /* Alinea la barra con el borde izquierdo de la ventana */
+    width: 100%; /* Hace que la barra ocupe todo el ancho de la ventana */
+    z-index: 1000; /* Asegura que la barra esté encima de otros elementos */
+}
+
+#navbar header {
+    margin-bottom: 10px; /* Espaciado entre el título y los enlaces */
+}
+
+#navbar h1 {
+    color: #fff; /* Color del texto del título */
+    font-size: 24px; /* Tamaño de la fuente del título */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+.nav-link {
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    margin: 0 15px; /* Espaciado horizontal entre los enlaces */
+    font-size: 18px; /* Tamaño de la fuente de los enlaces */
+    display: inline-block; /* Asegura que los enlaces se muestren en línea */
+}
+
+.nav-link:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el cursor sobre él */
+}
+
+/* Añade un margen superior al contenido principal para evitar que quede oculto debajo de la barra de navegación */
+body {
+    margin-top: 90px; /* Ajusta el valor según el alto de la barra de navegación */
+}
+
+/* Media query para dispositivos móviles (pantallas pequeñas) */
+@media (max-width: 600px) {
+    h3 {
+        font-size: 16px; /* Reduce el tamaño de la fuente */
+    }
+
+    .arrow {
+        font-size: 12px; /* Reduce el tamaño de la flecha */
+    }
+
+    ul {
+        padding-left: 15px; /* Ajusta el padding para móviles */
+    }
+}
+
+/* Media query para tabletas (pantallas medianas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    h3 {
+        font-size: 20px; /* Tamaño de fuente ligeramente más grande para tabletas */
+    }
+
+    .arrow {
+        font-size: 16px; /* Tamaño de flecha ligeramente más grande para tabletas */
+    }
+
+    ul {
+        padding-left: 25px; /* Ajusta el padding para tabletas */
+    }
+}
+
+/* Media query para ordenadores (pantallas grandes) */
+@media (min-width: 1025px) {
+    h3 {
+        font-size: 22px; /* Tamaño de fuente más grande para ordenadores */
+    }
+
+    .arrow {
+        font-size: 18px; /* Tamaño de flecha más grande para ordenadores */
+    }
+
+    ul {
+        padding-left: 30px; /* Ajusta el padding para ordenadores */
+    }
+}
